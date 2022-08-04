@@ -1,0 +1,50 @@
+#container {
+  display: flex;
+  justify-content: center;
+}
+
+foreignObject {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  position: absolute;
+  width: 40px;
+  height: 12px;
+  padding: 4px;
+  border: 1px;
+  border-style: solid;
+  margin: 0;
+  text-align: center;
+}
+
+polygon {
+  fill:grey;
+  stroke:black;
+  stroke-width:1;
+}
+
+polygon:hover {
+  cursor: pointer;
+  fill:rgb(91, 91, 91);
+}
+
+circle {
+  fill:rgba(88, 172, 228, 0);
+  cursor: crosshair;
+  touch-action: none;
+}
+
+circle:hover {
+  fill:rgb(88, 172, 228);
+  cursor: crosshair;
+  touch-action: none;
+}
+
+circle:active {
+  fill:rgb(88, 172, 228);
+  cursor: crosshair;
+  touch-action: none;
+}
