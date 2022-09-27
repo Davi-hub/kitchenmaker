@@ -1,0 +1,17 @@
+circle {
+  fill:rgba(88, 172, 228, 0);
+  cursor: crosshair;
+  touch-action: none;
+}
+
+circle:hover {
+  fill:rgb(88, 172, 228);
+  cursor: crosshair;
+  touch-action: none;
+}
+
+circle:active {
+  fill:rgb(88, 172, 228);
+  cursor: crosshair;
+  touch-action: none;
+}

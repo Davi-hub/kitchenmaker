@@ -1,22 +1,4 @@
-<div id="container">
-  <svg id="svgEl" width="1000" height="1000" #svgEl>
-    <foreignObject [attr.height]="inputX.getBoundingClientRect().height" [attr.width]="inputX.getBoundingClientRect().width" [attr.x]="this.AB.getInputVector(10).point.x" [attr.y]="this.AB.getInputVector(10).point.y" >
-      <input id="inputAB" type="text" [value]="AB.length" #inputX (change)="AB.length=+inputX.value;">
-    </foreignObject>
-    <polygon attr.points="{{wallA}}" />
-    <polygon attr.points="{{wallB}}" />
-    <polygon attr.points="{{wallC}}" />
-    <polygon attr.points="{{wallD}}" />
-    <path attr.d="{{rulerA}}" stroke="black" fill="none"></path>
-    <path attr.d="{{rulerB}}" stroke="black" fill="none"></path>
-    <path attr.d="{{rulerC}}" stroke="black" fill="none"></path>
-    <path attr.d="{{rulerD}}" stroke="black" fill="none"></path>
-    <circle attr.cx="{{A.x}}" attr.cy="{{A.y}}" r="8" (pointerdown)="downHandlePoints($event, A)" />
-    <circle attr.cx="{{B.x}}" attr.cy="{{B.y}}" r="8" (pointerdown)="downHandlePoints($event, B)" />
-    <circle attr.cx="{{C.x}}" attr.cy="{{C.y}}" r="8" (pointerdown)="downHandlePoints($event, C)" />
-    <circle attr.cx="{{D.x}}" attr.cy="{{D.y}}" r="8" (pointerdown)="downHandlePoints($event, D)" />
-  </svg>
-</div>
+<app-square-room></app-square-room>
 
 <!-- <svg
   width="500"

@@ -1,0 +1,54 @@
+<svg:g>
+  <foreignObject
+    [attr.height]="inputX.getBoundingClientRect().height"
+    [attr.width]="inputX.getBoundingClientRect().width"
+    [attr.x]="this.squareRoomService.AB.getInputVector(10).point.x"
+    [attr.y]="this.squareRoomService.AB.getInputVector(10).point.y" >
+    <input
+      #inputX
+      id="inputAB"
+      type="text"
+      [value]="squareRoomService.AB.length"
+      (change)="squareRoomService.AB.length=+inputX.value;">
+  </foreignObject>
+  <foreignObject
+    [attr.height]="inputBC.getBoundingClientRect().height"
+    [attr.width]="inputBC.getBoundingClientRect().width"
+    [attr.x]="this.squareRoomService.BC.getInputVector(10).point.x"
+    [attr.y]="this.squareRoomService.BC.getInputVector(10).point.y" >
+    <input
+      #inputBC
+      id="inputBC"
+      type="text"
+      [value]="squareRoomService.BC.length"
+      (change)="squareRoomService.BC.length=+inputBC.value;">
+  </foreignObject>
+  <foreignObject
+    [attr.height]="inputCD.getBoundingClientRect().height"
+    [attr.width]="inputCD.getBoundingClientRect().width"
+    [attr.x]="this.squareRoomService.CD.getInputVector(10).point.x"
+    [attr.y]="this.squareRoomService.CD.getInputVector(10).point.y" >
+    <input
+      #inputCD
+      id="inputCD"
+      type="text"
+      [value]="squareRoomService.CD.length"
+      (change)="squareRoomService.CD.length=+inputCD.value;">
+  </foreignObject>
+  <foreignObject
+    [attr.height]="inputX.getBoundingClientRect().height"
+    [attr.width]="inputX.getBoundingClientRect().width"
+    [attr.x]="this.squareRoomService.AB.getInputVector(10).point.x"
+    [attr.y]="this.squareRoomService.AB.getInputVector(10).point.y" >
+    <input
+      #inputX
+      id="inputAB"
+      type="text"
+      [value]="squareRoomService.AB.length"
+      (change)="squareRoomService.AB.length=+inputX.value;">
+  </foreignObject>
+  <path attr.d="{{squareRoomService.rulerA}}" stroke="black" fill="none"></path>
+  <path attr.d="{{squareRoomService.rulerB}}" stroke="black" fill="none"></path>
+  <path attr.d="{{squareRoomService.rulerC}}" stroke="black" fill="none"></path>
+  <path attr.d="{{squareRoomService.rulerD}}" stroke="black" fill="none"></path>
+</svg:g>

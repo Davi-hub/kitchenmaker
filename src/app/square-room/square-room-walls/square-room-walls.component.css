@@ -1,0 +1,10 @@
+polygon {
+  fill:grey;
+  stroke:black;
+  stroke-width:1;
+}
+
+polygon:hover {
+  cursor: pointer;
+  fill:rgb(91, 91, 91);
+}
